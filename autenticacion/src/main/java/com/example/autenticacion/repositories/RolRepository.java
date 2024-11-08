@@ -1,5 +1,10 @@
 package com.example.autenticacion.repositories;
 
-public class RolRepository {
-    
+import com.example.autenticacion.models.Rol;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import java.util.Optional;
+import java.util.UUID;
+
+public interface RolRepository  extends MongoRepository<Rol, UUID> {
+    Optional<Rol> findByRol(String Rol);
 }
