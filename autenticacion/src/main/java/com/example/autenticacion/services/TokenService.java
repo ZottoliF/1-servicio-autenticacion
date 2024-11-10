@@ -1,10 +1,5 @@
 package com.example.autenticacion.services;
 
-<<<<<<< HEAD
-public class TokenService {
-    
-}
-=======
 import com.example.autenticacion.models.Token;
 import com.example.autenticacion.repositories.TokenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,4 +44,3 @@ public class TokenService {
         });
     }
 }
->>>>>>> b70479c78fdd25c5d53a5bc13440ee4cdad3967c
