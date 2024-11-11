@@ -1,9 +1,5 @@
 package com.example.autenticacion.models;
 
-<<<<<<< HEAD
-public class Token {
-    
-=======
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDateTime;
@@ -83,5 +79,4 @@ public class Token {
     public void setUsuarioId(UUID usuarioId) {
         this.usuarioId = usuarioId;
     }
->>>>>>> b70479c78fdd25c5d53a5bc13440ee4cdad3967c
 }

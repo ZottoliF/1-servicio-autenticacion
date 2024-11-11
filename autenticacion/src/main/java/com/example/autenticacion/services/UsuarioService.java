@@ -1,9 +1,5 @@
 package com.example.autenticacion.services;
 
-<<<<<<< HEAD
-public class UsuarioService {
-    
-=======
 import com.example.autenticacion.models.Usuario;
 import com.example.autenticacion.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,5 +22,4 @@ public class UsuarioService {
         }
         return null; // Devuelve null si la autenticación falla
     }
->>>>>>> b70479c78fdd25c5d53a5bc13440ee4cdad3967c
 }

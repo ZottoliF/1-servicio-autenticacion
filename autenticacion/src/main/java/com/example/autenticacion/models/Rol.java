@@ -6,12 +6,12 @@ import java.util.UUID;
 
 @Document(collection = "Rol")
 public class Rol {
-    @id
+    @Id
    private UUID id;
    private String nombreRol;
    private String descripcion;
 
-   public Suscripcion(UUIDid, String nombreRol, String descripcion) {
+   public Rol(UUID id, String nombreRol, String descripcion) {
     this.id = id;
     this.nombreRol = nombreRol;
     this.descripcion = descripcion;   

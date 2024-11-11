@@ -17,7 +17,7 @@ public class RolService {
     }
 
     public Rol obtenerRolPorId (UUID id) {
-        return rolRepository.findById(id).orElse(null);
+        return RolRepository.findById(id).orElse(null);
     }
 
     public Rol guardarRol(Rol rol) {
@@ -25,16 +25,16 @@ public class RolService {
     }
 
     public Rol actualizarRol(UUID id, Rol RolActualizado) {
-        return rolRepository.findById(id)
+        return RolRepository.findById(id)
                 .map(rol -> {
-                    rol.setNombreRol(rolActualizado.getNombreRol());
-                    rol.setDescripcion(rolActualizado.getDescripcion());
-                    return RolRepository.save(Rol);
+                    rol.setNombreRol(RolActualizado.getNombreRol());
+                    rol.setDescripcion(RolActualizado.getDescripcion());
+                    return RolRepository.save(rol);
                 })
                 .orElse(null);
     }
 
-    public void eliminarRol(Long id) {
-        rolRepository.deleteById(id);
+    public void eliminarRol(UUID id) {
+        RolRepository.deleteById(id);
     }
 }

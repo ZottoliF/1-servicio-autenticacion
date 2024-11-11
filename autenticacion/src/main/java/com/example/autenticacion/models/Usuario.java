@@ -1,9 +1,5 @@
 package com.example.autenticacion.models;
 
-<<<<<<< HEAD
-public class Usuario {
-    
-=======
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -44,5 +40,4 @@ public class Usuario {
     public void setPassword(String password) {
         this.password = password;
     }
->>>>>>> b70479c78fdd25c5d53a5bc13440ee4cdad3967c
 }

@@ -25,19 +25,16 @@ public class RolController {
 
     @PostMapping
     public Rol crearRol(@RequestBody Rol rol) {
-        return rolService.guardarRol(rol);
+        return RolService.guardarRol(rol);
     }
 
     @PutMapping("/{id}")
     public Rol actualizarRol(@PathVariable UUID id, @RequestBody Rol rol) {
-        return rolService.actualizarRol(id, rol);
+        return RolService.actualizarRol(id, rol);
     }
 
     @DeleteMapping("/{id}")
     public void eliminarRol(@PathVariable UUID id) {
-        rolService.eliminarRol(id);
+        RolService.eliminarRol(id);
     }
-}
-
-
 }
