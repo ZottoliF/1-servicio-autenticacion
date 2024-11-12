@@ -3,8 +3,11 @@ package com.example.autenticacion.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.example.autenticacion.models.Permiso;
 
+@Service
 public class PermisoService {
 
     public List<Permiso> findAll() {
