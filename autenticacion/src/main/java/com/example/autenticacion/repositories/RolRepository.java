@@ -6,5 +6,5 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface RolRepository  extends MongoRepository<Rol, UUID> {
-    Optional<Rol> findByRol(String Rol);
+    Optional<Rol> findByNombreRol(String nombreRol);
 }

@@ -6,5 +6,5 @@ import com.example.autenticacion.models.Permiso;
 public interface PermisoRepository extends MongoRepository<Permiso, String> {
 
     // Método para buscar un Permiso por su código
-    Permiso findByCodigo(String codigo);
+    Permiso findByNombrePermiso(String nombrePermiso);
 }
