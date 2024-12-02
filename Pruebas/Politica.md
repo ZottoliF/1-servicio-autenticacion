@@ -22,7 +22,7 @@ Esta política se aplica a todas las actividades de prueba realizadas en el micr
 El microservicio de Autenticación y Autorización de Usuarios se considerará exitoso si:
 - Todos los casos de prueba críticos y de alta prioridad se ejecutan y pasan.
 - Los defectos críticos son corregidos antes de la implementación.
-- La cobertura de pruebas unitarias alcanza un mínimo del 85%.
+- La cobertura de pruebas unitarias alcanza un mínimo del 80%.
 - El rendimiento del sistema cumple con los requisitos establecidos.
 - Se logra una satisfacción del usuario final en pruebas de usabilidad.
 
