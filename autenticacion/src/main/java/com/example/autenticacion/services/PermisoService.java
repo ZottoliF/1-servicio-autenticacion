@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.autenticacion.models.Permiso;
 
-@Service
+@Service  // Se agrega la anotación @Service
 public class PermisoService {
 
     public List<Permiso> findAll() {
@@ -15,7 +15,7 @@ public class PermisoService {
         throw new UnsupportedOperationException("metodo no implementado'findAll'");
     }
 
-    public Optional<Permiso> findById(Long id) {
+    public Optional<Permiso> findById(String id) {
        
         throw new UnsupportedOperationException("metodo no implementado 'findById'");
     }
@@ -26,6 +26,11 @@ public class PermisoService {
     }
 
     public void deleteById(Long id) {
+        
+        throw new UnsupportedOperationException("metodo no implementado 'deleteById'");
+    }
+
+    public void deleteById(String id) {
         
         throw new UnsupportedOperationException("metodo no implementado 'deleteById'");
     }
