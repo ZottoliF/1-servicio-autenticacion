@@ -65,7 +65,7 @@ public class PermisoController {
     //Para hacer esto hay que poner la URL (ruta) de la api en POSTMAN y colocar el metodo PUT
     //tambien poner en la url /api/Permiso/{id}  , (id vendria hacer un String)al final de la URL
     @PutMapping("/{id}")
-    public ResponseEntity<Permiso> actualizarPermiso(@PathVariable String id, @RequestBody Permiso permisoDetalles) { 
+    public ResponseEntity<Permiso> actualizarPermiso(@PathVariable String id, @RequestBody Permiso permisoDetalles) { // Ajusté a Long también aquí
         Optional<Permiso> permisoOptional = permisoService.findById(id);
         if (permisoOptional.isPresent()) {
             Permiso permisoExistente = permisoOptional.get();
