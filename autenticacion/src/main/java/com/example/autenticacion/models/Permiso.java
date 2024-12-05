@@ -3,7 +3,7 @@ package com.example.autenticacion.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "Permiso")
+@Document(collection = "Permiso") // nombre de la coleccion en la base de datos
 public class Permiso {
 
     @Id
